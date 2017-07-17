@@ -236,3 +236,12 @@ This class not ready for 100%, but I make most important things and you can work
 [2]: https://www.instagram.com
 [3]: https://www.python.org/dev/peps/pep-0008/#source-file-encoding
 [4]: https://github.com/LevPasha/Instagram-API-python
+
+
+## Docker
+
+```shell
+docker build -t python-instabot .
+
+docker run python-instabot
+```
