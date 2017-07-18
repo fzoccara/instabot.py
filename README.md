@@ -240,8 +240,16 @@ This class not ready for 100%, but I make most important things and you can work
 
 ## Docker
 
-```shell
-docker build -t python-instabot .
+To create docker image
 
-docker run python-instabot
+```shell
+docker-compose up
+
+docker run -it python:3 /bin/bash
+```
+
+To run example.py inside docker
+
+```shell
+$ python ./example.py
 ```
