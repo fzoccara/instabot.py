@@ -243,9 +243,9 @@ This class not ready for 100%, but I make most important things and you can work
 To create docker image
 
 ```shell
-docker-compose up
+docker-compose up -d
 
-docker run -it python:3 /bin/bash
+docker exec -it instabot /bin/bash
 ```
 
 To run example.py inside docker
