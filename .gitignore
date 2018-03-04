@@ -97,3 +97,9 @@ ENV/
 # IDEs
 .idea/
 *.iml
+
+# this proj
+.DS_Store
+follows_db.db
+fzoccara.py
+errors.log

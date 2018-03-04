@@ -2,9 +2,11 @@ version: '2'
 
 services:
   python:
-    image: python:3
+    build: .
+    #image: python:3
     container_name: instabot
 #    command: pip install -r requirements.txt
     volumes:
       - .:/code
+    command: python ./fzoccara.py
 

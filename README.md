@@ -240,16 +240,26 @@ This class not ready for 100%, but I make most important things and you can work
 
 ## Docker
 
-To create docker image
+To create docker image and container
 
 ```shell
 docker-compose up -d
-
-docker exec -it instabot /bin/bash
 ```
 
-To run example.py inside docker
+To stop docker container
 
 ```shell
-$ python ./example.py
+docker stop instabot
 ```
+
+To read logs
+
+```shell
+docker logs instabot
+```
+
+To re-generate the same container
+```shell
+docker-compose up -d --build 
+```
+
