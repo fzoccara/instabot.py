@@ -238,9 +238,9 @@ This class not ready for 100%, but I make most important things and you can work
 [4]: https://github.com/LevPasha/Instagram-API-python
 
 
-## Docker
+## Docker-compose
 
-To create docker image and container
+To create docker image and container, !!!first remove command row from Dockerfile!!!
 
 ```shell
 docker-compose up -d
@@ -263,3 +263,15 @@ To re-generate the same container
 docker-compose up -d --build 
 ```
 
+
+## Docker
+
+To build standalone image
+```shell
+docker build -f Dockerfile -t fzoccara/instabotpy:lastest .
+```
+
+To run standalone image
+```shell
+docker run -p 5000:5000 --rm fzoccara/instabotpy
+```
